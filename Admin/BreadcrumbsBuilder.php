@@ -65,7 +65,7 @@ final class BreadcrumbsBuilder implements BreadcrumbsBuilderInterface
         $menu = $this->createMenuItem(
             $admin,
             $menu,
-            sprintf('%s_list', $admin->getClassnameLabel()),
+            sprintf('%s', $admin->getClassnameLabel()),
             null,
             array(
                 'uri' => $admin->hasRoute('list') && $admin->isGranted('LIST') ?
